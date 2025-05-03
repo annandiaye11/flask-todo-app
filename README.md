@@ -38,7 +38,7 @@ flask db migrate -m "Initial migration"
 flask db upgrade
 
 # Lancer l'application
-flask run
+python run.py
 ```
 
 ## 🔒 Sécurité
