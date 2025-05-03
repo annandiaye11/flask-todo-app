@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenue</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-blue-300 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-lg rounded-xl p-10 text-center space-y-6 max-w-md w-full">
+        <h1 class="text-3xl font-bold text-gray-800">Bienvenue sur l'application TODO</h1>
+        <p class="text-gray-600">Organisez vos tâches en toute simplicité.</p>
+        
+        <div class="space-y-4">
+            <ul class="text-left space-y-2">
+                <li class="flex items-center text-gray-700">
+                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                    <span>Créez et gérez vos tâches quotidiennes</span>
+                </li>
+                <li class="flex items-center text-gray-700">
+                    <i class="fas fa-tags text-blue-500 mr-2"></i>
+                    <span>Organisez par catégories personnalisées</span>
+                </li>
+                <li class="flex items-center text-gray-700">
+                    <i class="fas fa-calendar-alt text-purple-500 mr-2"></i>
+                    <span>Définissez des dates d'échéance</span>
+                </li>
+                <li class="flex items-center text-gray-700">
+                    <i class="fas fa-flag text-red-500 mr-2"></i>
+                    <span>Priorisez vos tâches importantes</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="space-x-4">
+            <a href="{{ url_for('login') }}" class="px-5 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+                <i class="fas fa-sign-in-alt mr-1"></i> Connexion
+            </a>
+            <a href="{{ url_for('register') }}" class="px-5 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition">
+                <i class="fas fa-user-plus mr-1"></i> Inscription
+            </a>
+        </div>
+    </div>
+</body>
+</html>
